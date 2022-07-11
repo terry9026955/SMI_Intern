@@ -24,7 +24,7 @@ def main():
     
     # Write the SHA code into Debug_log file 
     with open(real_time + "_Debug_log.log", "w") as dataWrite:
-        print("SHA code is written into Degub_log")
+        print("SHA code is written into Debug_log")
         dataWrite.write(dataSHA)
 
 
