@@ -34,9 +34,6 @@ if __name__ == "__main__":
 
 
 
-    # 問題: 很奇怪的是執行完call_batch.py之後，這個python檔的code會自動回溯到我一上一個寫的版本
-
-
 
     
     # read batch file line by line (測試用)

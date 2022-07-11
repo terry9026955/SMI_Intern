@@ -38,7 +38,7 @@ git fetch -p
  git pull  
  git log --oneline -1   1>>D:\Tinghao.Chen\Desktop\oneTouch_tool\auto_log\SHA.log 
 ) 
-HEAD is now at 26161fa Read batch file and write into data.log
+HEAD is now at 4564382 Read from batch file and write into log file
 Your branch is up to date with 'origin/main'.
 Already up to date.
 
