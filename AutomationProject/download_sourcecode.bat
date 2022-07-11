@@ -50,4 +50,3 @@ If %VarSHA%=="" (
 	git log --oneline -1 >> %JENKINS_WORKSPACE%\SHA.log )
 
 echo errorlevel = %errorlevel% >> %JENKINS_WORKSPACE%\Debug.log
-pause

@@ -1,0 +1,50 @@
+
+D:\Tinghao.Chen\Desktop\SMIGIT\AutomationProject>set JENKINS_WORKSPACE=D:\Tinghao.Chen\Desktop\oneTouch_tool\auto_log 
+D:\Tinghao.Chen\Desktop\SMIGIT\AutomationProject>set GERRIT_PROJECT=SM2269 
+D:\Tinghao.Chen\Desktop\SMIGIT\AutomationProject>If SM2269 EQU SM2269 (set GERRIT_PROJECT=SM2269XT_EchoHarbor ) 
+D:\Tinghao.Chen\Desktop\SMIGIT\AutomationProject>echo SM2269XT_EchoHarbor 
+SM2269XT_EchoHarbor
+D:\Tinghao.Chen\Desktop\SMIGIT\AutomationProject>echo  
+ECHO 已啟動。
+D:\Tinghao.Chen\Desktop\SMIGIT\AutomationProject>set GERRIT_USER_ACCOUNT=ts.tsai 
+D:\Tinghao.Chen\Desktop\SMIGIT\AutomationProject>set GERRIT_HOST=rd2gerrit01.siliconmotion.com.tw 
+D:\Tinghao.Chen\Desktop\SMIGIT\AutomationProject>echo errorlevel = 0  1>>D:\Tinghao.Chen\Desktop\oneTouch_tool\auto_log\Debug.log 
+D:\Tinghao.Chen\Desktop\SMIGIT\AutomationProject>echo "========== Download Source Code =========="  1>>D:\Tinghao.Chen\Desktop\oneTouch_tool\auto_log\Debug.log 
+D:\Tinghao.Chen\Desktop\SMIGIT\AutomationProject>set JENKINS_SOURCECODE_PATH=D:\SourceCode_SM 
+D:\Tinghao.Chen\Desktop\SMIGIT\AutomationProject>If Not Exist D:\SourceCode_SM (git clone --progress --recursive --branch  -v "ssh://ts.tsai@rd2gerrit01.siliconmotion.com.tw:29418/SM2269XT_EchoHarbor" D:\SourceCode_SM  1>>D:\Tinghao.Chen\Desktop\oneTouch_tool\auto_log\Debug.log ) 
+D:\Tinghao.Chen\Desktop\SMIGIT\AutomationProject>If "" == "" (
+Set VarSHA=""  
+  
+ 
+)  else (Set VarSHA=  ) 
+D:\Tinghao.Chen\Desktop\SMIGIT\AutomationProject>echo "" 
+""
+D:\Tinghao.Chen\Desktop\SMIGIT\AutomationProject>del D:\Tinghao.Chen\Desktop\oneTouch_tool\auto_log\SHA.log 
+D:\Tinghao.Chen\Desktop\SMIGIT\AutomationProject>d:
+D:\Tinghao.Chen\Desktop\SMIGIT\AutomationProject>cd D:\SourceCode_SM 
+D:\Tinghao.Chen\Desktop\SMIGIT\AutomationProject>If "" == "" (
+git fetch -p  
+ git clean -fd  
+ git reset --hard HEAD  
+ git checkout   
+ git pull  
+ git log --oneline -1  1>>D:\Tinghao.Chen\Desktop\oneTouch_tool\auto_log\SHA.log 
+)  else (
+git fetch -p  
+ git clean -fd  
+ git reset --hard HEAD  
+ git checkout   
+ git checkout ""  
+ git pull  
+ git log --oneline -1   1>>D:\Tinghao.Chen\Desktop\oneTouch_tool\auto_log\SHA.log 
+) 
+Removing 20220711_142435_Debug_log.log
+Removing data.log
+HEAD is now at 1eeb4ef delete not important file
+Your branch is up to date with 'origin/main'.
+Already up to date.
+
+D:\Tinghao.Chen\Desktop\SMIGIT\AutomationProject>echo errorlevel = 0  1>>D:\Tinghao.Chen\Desktop\oneTouch_tool\auto_log\Debug.log 
+D:\Tinghao.Chen\Desktop\SMIGIT\AutomationProject>pause
+請按任意鍵繼續 . . . 
+
